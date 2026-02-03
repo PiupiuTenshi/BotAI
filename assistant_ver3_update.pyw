@@ -153,7 +153,7 @@ def RunProgram():
     try:
         # if u use default voice like: google, hey Siri... 
         # replace attribute keywords with attribute keyword_paths=[TEN_FILE_MODEL]
-        porcupine = pvporcupine.create(access_key=ACCESS_KEY, keywords=['google'])
+        porcupine = pvporcupine.create(access_key=ACCESS_KEY, keywords=['ok google'])
         recorder = PvRecorder(device_index=-1, frame_length=porcupine.frame_length)
     except Exception as e:
         print(f"Lỗi khởi tạo Porcupine (Kiểm tra Key): {e}")
