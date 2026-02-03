@@ -130,10 +130,11 @@ pip install pyinstaller
 #### 2. Build EXE
 
 ```bash
-pyinstaller --noconsole --onefile \
---add-data "mahiru_siri.gif;." \
---add-data "Mahiru_windows.ppn;." \
-assistant_ver3_update.pyw
+pyinstaller --noconsole --onefile --collect-all pvporcupine --collect-all pvrecorder --add-data "mahiru_siri.gif;." assistant_ver3_update.pyw
+```
+or
+```bash
+pyinstaller --noconsole --onefile --collect-all pvporcupine --collect-all pvrecorder --add-data "mahiru_siri.gif;." --add-data "Ma-hee-roo_en_windows_v4_0_0.ppn;." assistant_ver3_update.pyw
 ```
 
 #### 3. Run
@@ -234,11 +235,13 @@ python assistant_ver3_update.pyw
 ### 🧱 Đóng gói EXE
 
 ```bash
-pyinstaller --noconsole --onefile \
---add-data "mahiru_siri.gif;." \
---add-data "Mahiru_windows.ppn;." \
-assistant_ver3_update.pyw
+pyinstaller --noconsole --onefile --collect-all pvporcupine --collect-all pvrecorder --add-data "mahiru_siri.gif;." assistant_ver3_update.pyw
 ```
+hoặc
+```bash
+pyinstaller --noconsole --onefile --collect-all pvporcupine --collect-all pvrecorder --add-data "mahiru_siri.gif;." --add-data "Ma-hee-roo_en_windows_v4_0_0.ppn;." assistant_ver3_update.pyw
+```
+
 
 ➡️ File `.exe` nằm trong thư mục `dist`
 ➡️ Chạy được trên máy khác **(có Ollama)**
